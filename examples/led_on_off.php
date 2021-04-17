@@ -27,7 +27,7 @@ $loginresults     = $unifi_connection->login();
  * device ids stored in the config, dumped from API
  */
 $led_state = $argv[1];
-$device_id = $udm_id; #
+$device_id = $flexhd_id;
 
 $data = $unifi_connection->led_override($device_id, $led_state);
 
