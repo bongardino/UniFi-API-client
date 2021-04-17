@@ -23,10 +23,11 @@ $set_debug_mode   = $unifi_connection->set_debug($debug);
 $loginresults     = $unifi_connection->login();
 
 /**
- * using the new method/function
+ * use: <php led_on_off.php 'off'>
+ * device ids stored in the config, dumped from API
  */
 $led_state = $argv[1];
-$device_id = $udm_id; # stored in the config, dumped from API
+$device_id = $udm_id; #
 
 $data = $unifi_connection->led_override($device_id, $led_state);
 
